@@ -10,7 +10,7 @@
 open a command hub and type
 
 ```bash
- yarn install 
+ corepack enable 
 ```
 
 ### install deps
