@@ -4,7 +4,8 @@
 ----------------------------------------------------------------------------------------------------
 
 ## Motivation
-#### if you dont like going to a sketchy image converter website, or you dont like using low quallity one, i got you covered, i cant tell you how many times i wanted to usee one that dident cost money or that was clunky.
+#### If you're tired of relying on unreliable or questionable image converter websites, or if you've been frustrated by tools that produce low-quality results, you're not alone—and I've got the perfect solution for you. I can't count the number of times I've needed a robust and efficient image converter, only to be met with clunky interfaces, hidden fees, or disappointing output quality.
+
 
 ### enable corepack
 
