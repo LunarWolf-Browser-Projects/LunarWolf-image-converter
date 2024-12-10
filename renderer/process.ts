@@ -1,4 +1,4 @@
-// Renderer process initialization
+zz// Renderer process initialization
 console.log("Renderer process starting...");
 
 if (window.api) {
