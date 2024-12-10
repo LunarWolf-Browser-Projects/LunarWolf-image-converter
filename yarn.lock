@@ -453,7 +453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/debug@npm:^4.1.12, @types/debug@npm:^4.1.6":
+"@types/debug@npm:^4.1.6":
   version: 4.1.12
   resolution: "@types/debug@npm:4.1.12"
   dependencies:
@@ -1967,7 +1967,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.3, debug@npm:^4.3.4, debug@npm:^4.3.7":
+"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.3, debug@npm:^4.3.4":
   version: 4.4.0
   resolution: "debug@npm:4.4.0"
   dependencies:
@@ -2217,16 +2217,6 @@ __metadata:
     electron-builder: cli.js
     install-app-deps: install-app-deps.js
   checksum: 10c0/9602a19f8c647fb75b07e44dc856012d2b1fe1afcb257ffd24cf17e07d7ae3b51405cf31da10403965ddcc7b194d60aca6bc5d7890e367b1be2ec95219edcbe8
-  languageName: node
-  linkType: hard
-
-"electron-chrome-extensions-suit@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "electron-chrome-extensions-suit@npm:1.1.0"
-  dependencies:
-    "@types/debug": "npm:^4.1.12"
-    debug: "npm:^4.3.7"
-  checksum: 10c0/2f950f5631b429f7755bf5d9d1a19d179b28cde84fc3b3f6e053bcf189216c824de22c6dc65554fc2d2445a7434b135f93e3d0654cdda28b02b341706ed4234e
   languageName: node
   linkType: hard
 
@@ -3920,9 +3910,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lunarwolf@workspace:.":
+"lunarwolf-image-converter@workspace:.":
   version: 0.0.0-use.local
-  resolution: "lunarwolf@workspace:."
+  resolution: "lunarwolf-image-converter@workspace:."
   dependencies:
     "@electron/remote": "npm:^2.1.2"
     "@eslint/js": "npm:^9.16.0"
@@ -3933,7 +3923,6 @@ __metadata:
     copy-webpack-plugin: "npm:^12.0.2"
     electron: "npm:33.2.1"
     electron-builder: "npm:^25.1.8"
-    electron-chrome-extensions-suit: "npm:^1.1.0"
     electron-to-chromium: "npm:^1.5.71"
     eslint-plugin-react: "npm:^7.37.2"
     globals: "npm:^15.13.0"
