@@ -15,8 +15,7 @@ function createWindow() {
     },
   });
 
-  // Load the newtab.html for the homepage
-  mainWindow.loadFile(path.resolve(__dirname, "./newtabpage/newtab.html"));
+  mainWindow.loadFile(path.resolve(__dirname, "./applogic/converterapp.html"));
 }
 
 app.whenReady().then(() => {
