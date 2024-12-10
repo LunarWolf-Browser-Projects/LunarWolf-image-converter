@@ -1,5 +1,5 @@
 {
-  "name": "lunarwolf",
+  "name": "lunarwolf-image-converter",
   "version": "0.0.1",
   "license": "MIT",
   "description": "LunarWolf",
@@ -14,7 +14,7 @@
     "build-main": "webpack --config webpack.main.config.js",
     "build-renderer": "webpack --config webpack.renderer.config.js",
     "build": "yarn build-renderer && ts-node buildscripts/cl-builder.ts",
-    "start": "electron ./builddir/lunarwolf.js"
+    "start": "electron ./builddir/lunarwolf-image-converter.js"
   },
   "packageManager": "yarn@4.5.1",
   "dependencies": {

@@ -7,7 +7,7 @@ module.exports = {
   target: "electron-main",
   output: {
     path: path.resolve(__dirname, "builddir"),
-    filename: "lunarwolf.js",
+    filename: "lunarwolf-image-converter.js",
     clean: true,
   },
   resolve: {
