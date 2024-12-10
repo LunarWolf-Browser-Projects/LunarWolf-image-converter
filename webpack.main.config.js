@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-        { from: "renderer/newtab.html", to: "newtabpage/newtab.html" },
+        { from: "z/newtab.html", to: "newtabpage/newtab.html" },
       ],
     }),
   ],
