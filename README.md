@@ -3,8 +3,8 @@
 
 ----------------------------------------------------------------------------------------------------
 
-### Motivation
-### looking for a electron web browser built on top of react and typescript, look no further, if you think building chromium is to hard and time consuming, i get it, thats one of the reasons this browser is around
+## Motivation
+### if you dont like going to a sketchy image converter website, or you dont like using low quallity one, i got you covered, i cant tell you how many times i wanted to usee one that dident cost money or that was clunky.
 
 ### enable corepack
 
