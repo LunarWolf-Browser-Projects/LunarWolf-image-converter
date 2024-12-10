@@ -4,7 +4,7 @@
 ----------------------------------------------------------------------------------------------------
 
 ## Motivation
-### if you dont like going to a sketchy image converter website, or you dont like using low quallity one, i got you covered, i cant tell you how many times i wanted to usee one that dident cost money or that was clunky.
+#### if you dont like going to a sketchy image converter website, or you dont like using low quallity one, i got you covered, i cant tell you how many times i wanted to usee one that dident cost money or that was clunky.
 
 ### enable corepack
 
