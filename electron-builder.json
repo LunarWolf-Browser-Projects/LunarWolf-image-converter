@@ -1,41 +1,43 @@
 {
-    "appId": "com.lunarwolf.app", 
-    "productName": "LunarWolf", 
-    "copyright": "MIT License", 
-    "files": [
-      "dist/**/*", 
-      "node_modules/**/*"
+  "appId": "com.lunarwolf-image-converter.app",
+  "productName": "LunarWolf-image-converter",
+  "copyright": "MIT License",
+  "files": [
+    "builddir/**/*",
+    "node_modules/**/*",
+    "renderer/**/*",
+    "assets/**/*",
+    "applogic/**/*" 
+  ],
+  "directories": {
+    "output": "dist"
+  },
+  "win": {
+    "target": [
+      "nsis",
+      "zip"
     ],
-    "directories": {
-      "output": "dist" 
-    },
-    "win": {
-      "target": [
-        "nsis", 
-        "zip"
-      ],
-      "icon": "app/static/app_icons/windows/app_icon.ico" 
-    },
-    "mac": {
-      "target": [
-        "dmg",
-        "zip"
-      ],
-      "icon": "app/static/app_icons/mac/app_icon.icns"
-    },
-    "linux": {
-      "target": [
-        "AppImage",
-        "deb",
-        "tar.gz"
-      ],
-      "icon": "app/static/app_icons/linux/app_icon.png",
-      "category": "Utility",
-      "maintainer": "Damon Smith",
-      "description": "LunarWolf"
-    },
-    "extraResources": [
-      "assets/*"
-    ]
-  }
-  
+    "icon": "app/static/app_icons/windows/app_icon.ico"
+  },
+  "mac": {
+    "target": [
+      "dmg",
+      "zip"
+    ],
+    "icon": "app/static/app_icons/mac/app_icon.icns"
+  },
+  "linux": {
+    "target": [
+      "AppImage",
+      "deb",
+      "tar.gz"
+    ],
+    "icon": "app/static/app_icons/linux/app_icon.png",
+    "category": "Utility",
+    "maintainer": "Damon Smith",
+    "description": "LunarWolf-image-converter"
+  },
+  "extraResources": [
+    "assets/*"
+  ]
+}

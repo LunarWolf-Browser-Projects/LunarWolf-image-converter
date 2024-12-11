@@ -2,9 +2,10 @@
   "name": "lunarwolf-image-converter",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "LunarWolf",
+  "main": "builddir/lunarwolf-image-converter.js",
+  "description": "LunarWolf-image-converter",
   "keywords": [
-    "web-browser",
+    "image-converter",
     "material",
     "electron"
   ],
@@ -14,7 +15,7 @@
     "build-main": "webpack --config webpack.main.config.js",
     "build-renderer": "webpack --config webpack.renderer.config.js",
     "build": "yarn build-renderer && ts-node buildscripts/cl-builder.ts",
-    "compile windows": "electron-builder",
+    "compile-windows": "electron-builder",
     "start": "electron ./builddir/lunarwolf-image-converter.js"
   },
   "packageManager": "yarn@4.5.1",
@@ -23,7 +24,6 @@
     "electron-to-chromium": "^1.5.71",
     "node-parse-bookmarks": "^1.0.3",
     "react": "^19.0.0",
-    "react-browser-tabs": "^1.0.13",
     "react-dom": "^19.0.0",
     "rimraf": "^6.0.1",
     "styled-components": "^6.1.13",

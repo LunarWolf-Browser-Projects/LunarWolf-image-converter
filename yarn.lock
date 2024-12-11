@@ -3928,7 +3928,6 @@ __metadata:
     globals: "npm:^15.13.0"
     node-parse-bookmarks: "npm:^1.0.3"
     react: "npm:^19.0.0"
-    react-browser-tabs: "npm:^1.0.13"
     react-dom: "npm:^19.0.0"
     rimraf: "npm:^6.0.1"
     styled-components: "npm:^6.1.13"
@@ -4836,15 +4835,6 @@ __metadata:
   dependencies:
     safe-buffer: "npm:^5.1.0"
   checksum: 10c0/50395efda7a8c94f5dffab564f9ff89736064d32addf0cc7e8bf5e4166f09f8ded7a0849ca6c2d2a59478f7d90f78f20d8048bca3cdf8be09d8e8a10790388f3
-  languageName: node
-  linkType: hard
-
-"react-browser-tabs@npm:^1.0.13":
-  version: 1.0.13
-  resolution: "react-browser-tabs@npm:1.0.13"
-  peerDependencies:
-    react: ^16.0.0
-  checksum: 10c0/ed148bb6ba926c666ca418f4cbe695800c3d35a6f63f0c6dfc8b9440d483b500b278dd372bf1052c543eb13524bc52243281396bcdf55a84c20741a2c2b98789
   languageName: node
   linkType: hard
 
