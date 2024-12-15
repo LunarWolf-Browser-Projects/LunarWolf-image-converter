@@ -7,7 +7,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
 });
 
 contextBridge.exposeInMainWorld("api", {
-  version: "1.0.0",
+  version: "0.0.2",
   sendMessage: (message: string) => {
     console.log(message);
   },
