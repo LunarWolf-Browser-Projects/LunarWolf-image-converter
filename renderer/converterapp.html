@@ -136,7 +136,7 @@
       const height = parseInt(document.getElementById('height').value, 10);
       const format = document.getElementById('format').value;
 
-      canvas.width = width || uploadedImage.width;
+      canvas.width = width || uploadedImage.width;1
       canvas.height = height || uploadedImage.height;
 
       ctx.drawImage(uploadedImage, 0, 0, canvas.width, canvas.height);
