@@ -1,8 +1,8 @@
 import { app, BrowserWindow, ipcMain } from "electron";
 import path from "path";
 import initializeMainProcess from "../main/process"; // Initialize main process logic
-import { handleClose } from "./close";
-import { handleMinimize } from "./minimize";
+
+// TODO: logic for the closing, minimizzing, and maximizing the window are coming soon.
 
 let mainWindow: BrowserWindow | null = null;
 
@@ -10,7 +10,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    frame: false, // This removes the default window frame
+    frame: false, // Custom titlebar
     webPreferences: {
       preload: path.resolve(__dirname, "../preloads/main-load.js"),
       contextIsolation: true,
@@ -20,16 +20,22 @@ function createWindow() {
 
   mainWindow.loadFile(path.resolve(__dirname, "./applogic/converterapp.html"));
 
-  // Pass the window instance to the handlers after it's created
-  handleClose(mainWindow);
-  handleMinimize(mainWindow);
-
-  // Handle minimize and close events from the renderer
-  ipcMain.on("minimize-window", () => {
+  // Handle the minimize, maximize, and close events
+  ipcMain.on("window-minimize", () => {
     if (mainWindow) mainWindow.minimize();
   });
 
-  ipcMain.on("close-window", () => {
+  ipcMain.on("window-maximize", () => {
+    if (mainWindow) {
+      if (mainWindow.isMaximized()) {
+        mainWindow.restore();
+      } else {
+        mainWindow.maximize();
+      }
+    }
+  });
+
+  ipcMain.on("window-close", () => {
     if (mainWindow) mainWindow.close();
   });
 }

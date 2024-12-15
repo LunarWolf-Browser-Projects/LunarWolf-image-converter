@@ -31,15 +31,11 @@
       top: 0;
       left: 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start; /* Align the title to the left */
       align-items: center;
       box-sizing: border-box;
       -webkit-app-region: drag; /* Make the titlebar draggable */
       z-index: 10; /* Ensures the titlebar is above the window content */
-    }
-
-    .titlebar .icon {
-      margin-left: 10px;
     }
 
     /* Main Content Styling */
@@ -83,8 +79,7 @@
 </head>
 <body>
   <div class="titlebar" id="titlebar">
-    LunarWolf Advanced Image Converter
-    <span class="icon">🔄</span> <!-- Icon for Convert -->
+    LunarWolf Image Converter
   </div>
 
   <div class="card">

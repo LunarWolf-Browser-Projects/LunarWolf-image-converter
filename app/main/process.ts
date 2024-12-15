@@ -1,4 +1,5 @@
 import { app, BrowserWindow, ipcMain } from "electron";
+import path from "path";
 
 export default function initializeMainProcess() {
   console.log("Initializing main process...");
@@ -8,8 +9,25 @@ export default function initializeMainProcess() {
 
   // Set application-level event listeners
   app.on("browser-window-created", (_, window) => {
-    console.log("window was created with sucess.");
-    // TODO: Additional logic for new window
+    console.log("window was created with success.");
+
+    // Handle window controls for the newly created window
+    // Minimize, Maximize, Close actions
+    ipcMain.on("window-minimize", () => {
+      window.minimize();
+    });
+
+    ipcMain.on("window-maximize", () => {
+      if (window.isMaximized()) {
+        window.restore();
+      } else {
+        window.maximize();
+      }
+    });
+
+    ipcMain.on("window-close", () => {
+      window.close();
+    });
   });
 
   console.log("Main process initialization complete.");
