@@ -26,6 +26,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: "renderer/converterapp.html", to: "applogic/converterapp.html" },
+        { from: "app/initialize/close.ts", to: "applogic/close.js" },
+        { from: "app/initialize/minimize.ts", to: "applogic/minimize.js" },
       ],
     }),
   ],

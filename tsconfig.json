@@ -11,9 +11,13 @@
   "paths": {
     "*": ["node_modules/*"],
     "app/*": ["app/*"]
-},
+  },
   "include": [
     "./**/*.ts",
     "./**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "builddir"
   ]
 }
