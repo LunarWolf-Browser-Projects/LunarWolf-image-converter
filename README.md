@@ -1,5 +1,6 @@
 
-![app_banner_light](https://github.com/user-attachments/assets/974dbd41-ecd2-41ca-9b66-d15a71190263)
+
+![app_banner_light](https://github.com/user-attachments/assets/318ca45c-7a92-4961-884d-58b86dde1819)
 
 ----------------------------------------------------------------------------------------------------
 
