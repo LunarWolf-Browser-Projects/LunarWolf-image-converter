@@ -2,8 +2,6 @@ import { app, BrowserWindow, ipcMain } from "electron";
 import path from "path";
 import initializeMainProcess from "../main/process"; // Initialize main process logic
 
-// TODO: logic for the closing, minimizzing, and maximizing the window are coming soon.
-
 let mainWindow: BrowserWindow | null = null;
 
 function createWindow() {
@@ -20,7 +18,7 @@ function createWindow() {
 
   mainWindow.loadFile(path.resolve(__dirname, "./applogic/converterapp.html"));
 
-  // Handle the minimize, maximize, and close events
+  // Event listeners for window controls
   ipcMain.on("window-minimize", () => {
     if (mainWindow) mainWindow.minimize();
   });
@@ -37,6 +35,10 @@ function createWindow() {
 
   ipcMain.on("window-close", () => {
     if (mainWindow) mainWindow.close();
+  });
+
+  mainWindow.on("closed", () => {
+    mainWindow = null; // Dereference the window object
   });
 }
 
