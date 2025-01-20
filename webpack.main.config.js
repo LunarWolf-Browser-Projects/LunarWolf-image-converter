@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-        { from: "renderer/converterapp.html", to: "applogic/converterapp.html" },
+        { from: "ui/view/converterapp.html", to: "view/converterapp.html" },
       ],
     }),
   ],

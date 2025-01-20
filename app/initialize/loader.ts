@@ -16,7 +16,7 @@ function createWindow() {
     },
   });
 
-  mainWindow.loadFile(path.resolve(__dirname, "./applogic/converterapp.html"));
+  mainWindow.loadFile(path.resolve(__dirname, "./view/converterapp.html"));
 
   // Event listeners for window controls
   ipcMain.on("window-minimize", () => {
