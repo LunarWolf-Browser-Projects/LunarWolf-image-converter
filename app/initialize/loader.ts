@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain } from "electron";
+import { app, BrowserWindow, Menu } from "electron";
 import path from "path";
 import initializeMainProcess from "../main/process"; // Initialize main process logic
 
@@ -8,7 +8,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    frame: false, // Custom titlebar
+    frame: true, // Use the native operating system's title bar and frame
     webPreferences: {
       preload: path.resolve(__dirname, "../preloads/main-load.js"),
       contextIsolation: true,
@@ -18,24 +18,8 @@ function createWindow() {
 
   mainWindow.loadFile(path.resolve(__dirname, "./view/converterapp.html"));
 
-  // Event listeners for window controls
-  ipcMain.on("window-minimize", () => {
-    if (mainWindow) mainWindow.minimize();
-  });
-
-  ipcMain.on("window-maximize", () => {
-    if (mainWindow) {
-      if (mainWindow.isMaximized()) {
-        mainWindow.restore();
-      } else {
-        mainWindow.maximize();
-      }
-    }
-  });
-
-  ipcMain.on("window-close", () => {
-    if (mainWindow) mainWindow.close();
-  });
+  // Remove the default menu
+  Menu.setApplicationMenu(null);
 
   mainWindow.on("closed", () => {
     mainWindow = null; // Dereference the window object
