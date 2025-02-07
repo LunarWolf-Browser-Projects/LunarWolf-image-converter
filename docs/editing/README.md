@@ -13,9 +13,9 @@
 
 ## Tools you will need to compile
 
-download visual studio code from this link: https://code.visualstudio.com/download
-Learn to install yarn from this link: https://yarnpkg.com/getting-started/install
-install your image editing software of choice.
-download node.js from the following link: https://nodejs.org/en/download
++ download visual studio code from this link: https://code.visualstudio.com/download
++ Learn to install yarn from this link: https://yarnpkg.com/getting-started/install
++ install your image editing software of choice.
++ download node.js from the following link: https://nodejs.org/en/download
 
 ## for the rest of the building commands and stuff follow the rest of the instructions on the main README.
