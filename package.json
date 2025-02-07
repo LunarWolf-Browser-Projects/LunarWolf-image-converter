@@ -1,6 +1,6 @@
 {
   "name": "lunarwolf-image-converter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "builddir/lunarwolf-image-converter.js",
   "description": "LunarWolf-image-converter",
