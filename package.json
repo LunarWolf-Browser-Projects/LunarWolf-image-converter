@@ -1,12 +1,11 @@
 {
   "name": "lunarwolf-image-converter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "main": "builddir/lunarwolf-image-converter.js",
   "description": "LunarWolf-image-converter",
   "keywords": [
     "image-converter",
-    "material",
     "electron"
   ],
   "scripts": {
@@ -19,7 +18,7 @@
     "dev": "tsc -w && nodemon --watch dist --exec electron dist/lunarwolf-image-converter.js",
     "start": "electron ./builddir/lunarwolf-image-converter.js"
   },
-  "packageManager": "yarn@4.5.1",
+  "packageManager": "yarn@4.9.1",
   "dependencies": {
     "@electron/remote": "^2.1.2",
     "electron-to-chromium": "^1.5.83",

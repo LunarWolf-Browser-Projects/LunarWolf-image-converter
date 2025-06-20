@@ -26,6 +26,13 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: "ui/view/converterapp.html", to: "view/converterapp.html" },
+        { 
+          from: "preloads/main-preload.ts", 
+          to: "main-preload.js",
+          transform(content) {
+            return content;
+          }
+        },
       ],
     }),
   ],

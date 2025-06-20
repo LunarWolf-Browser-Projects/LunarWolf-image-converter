@@ -7,7 +7,9 @@
     "node_modules/**/*",
     "renderer/**/*",
     "assets/**/*",
-    "applogic/**/*" 
+    "applogic/**/*",
+    "!**/*.ts",
+    "!**/*.map"
   ],
   "directories": {
     "output": "dist"
@@ -38,6 +40,15 @@
     "description": "LunarWolf-image-converter"
   },
   "extraResources": [
+    {
+      "from": "builddir/main-preload.js",
+      "to": "main-preload.js"
+    },
     "assets/*"
-  ]
+  ],
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true
+  }
 }

@@ -6,7 +6,7 @@
 + .github (the area where the info of the repo, alongside any workloads may be stored.)
 + .yarn (precompiled yarn stats (default to yarn and not this project)
 + app (this directory contains the main initialization of the app and its components, this is also where the static files lay)
-+ uildscripts (a set of pre compiled scripts that build the program)
++ buildscripts (a set of pre compiled scripts that build the program)
 + preloads (this folder contains the preloading scripts necessary for the apps window and other elements)
 + renderer (this startsw the electron layer for other things in the app, for example ui elements and other important components of electron)
 + ui (this is where the ui of the app is located, in here, you can add features and change the design of the app if you want)

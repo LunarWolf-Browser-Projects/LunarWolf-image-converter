@@ -10,7 +10,7 @@ function createWindow() {
     height: 600,
     frame: true, // Use the native operating system's title bar and frame
     webPreferences: {
-      preload: path.resolve(__dirname, "../preloads/main-load.js"),
+      preload: path.resolve(__dirname, "../main-preload.js"),
       contextIsolation: true,
       nodeIntegration: false, // Disable nodeIntegration for security
     },
